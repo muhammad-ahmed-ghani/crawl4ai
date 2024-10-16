@@ -1,11 +1,11 @@
 
 from langchain_core.document_loaders import BaseLoader
 from langchain_core.documents import Document
-from ..crawl4ai import WebCrawler
-from ..crawl4ai.crawler_strategy import CrawlerStrategy
-from ..crawl4ai.extraction_strategy import ExtractionStrategy
-from ..crawl4ai.chunking_strategy import ChunkingStrategy, RegexChunking
-from ..crawl4ai.config import MIN_WORD_THRESHOLD
+from crawl4ai import WebCrawler
+from crawl4ai.crawler_strategy import CrawlerStrategy
+from crawl4ai.extraction_strategy import ExtractionStrategy
+from crawl4ai.chunking_strategy import ChunkingStrategy, RegexChunking
+from crawl4ai.config import MIN_WORD_THRESHOLD
 from typing import List, Optional, Iterator
 
 class Crawl4aiLoader(BaseLoader):
