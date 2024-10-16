@@ -35,25 +35,4 @@ setup(
     license="MIT",
     packages=find_packages(),
     install_requires=default_requirements,
-    extras_require={
-        "torch": torch_requirements,
-        "transformer": transformer_requirements,
-        "all": requirements,
-    },
-    entry_points={
-        'console_scripts': [
-            'crawl4ai-download-models=crawl4ai.model_loader:langchain',
-        ],
-    },
-    classifiers=[
-        "Development Status :: 3 - Alpha",
-        "Intended Audience :: Developers",
-        "License :: OSI Approved :: Apache Software License",
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
-        "Programming Language :: Python :: 3.10",
-    ],
-    python_requires=">=3.7",
 )
