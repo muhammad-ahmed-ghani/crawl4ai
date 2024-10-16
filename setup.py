@@ -42,7 +42,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'crawl4ai-download-models=crawl4ai.model_loader:main',
+            'crawl4ai-download-models=crawl4ai.model_loader:langchain',
         ],
     },
     classifiers=[
